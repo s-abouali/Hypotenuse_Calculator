@@ -1,3 +1,4 @@
 # Hypotenuse Calculator 📐
 
-Simple Hypotenuse Calculator program in ### c++ .
+### Simple Hypotenuse Calculator Program using
+### c++
