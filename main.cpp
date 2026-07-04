@@ -3,20 +3,49 @@
 
 int main(){
 
-    double a, b, hypotenuse;
+    char op;
+    double num1, num2, num3, result;
 
-    std::cout << "Enter the value of (a): ";
-    std::cin >> a;
+    std::cout <<"***********CALCULATOR***********" << '\n';
 
-    std::cout << "Enter the value of (b): ";
-    std::cin >> b;
+    std::cout <<"Enter either (+ - * /): ";
+    std::cin >> op;
 
-    hypotenuse = sqrt(pow(a,2) + pow(b,2));
+    std::cout <<"Enter 1st number: ";
+    std::cin >> num1;
 
-    std::cout << "hypotenuse = " << hypotenuse;
-    
+    std::cout <<"Enter 2nd number: ";
+    std::cin >> num2;
 
-    
+
+    switch(op){
+        case '+':
+            result = num1 + num2;
+            std::cout << "Your result is: " << result;
+            break;
+
+        case '-':
+            result = num1 - num2;
+            std::cout << "Your result is: " << result;
+            break;
+
+        case '*':
+            result = num1 * num2;
+            std::cout << "Your result is: "<< result;
+            break;
+
+        case '/':
+            result = num1 / num2;
+            std::cout << "Your result is: " << result;
+            break;
+
+        default:
+            std::cout <<"ERROR!!!";
+    }
+
+
+
+    std::cout <<'\n' <<"********************************";
     return 0;
 
 }
